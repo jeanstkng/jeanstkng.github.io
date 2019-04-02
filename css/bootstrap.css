@@ -139,8 +139,8 @@ body {
   }
 
 .hexagon1 {
-    width: 400px;
-    height: 200px;
+    width: 800px;
+    height: 400px;
     margin: 0 0 0 -80px;
   }
 
@@ -168,9 +168,19 @@ body {
               transform: rotate(-60deg);
       }
   .hexagon-in2:hover {
-      background-color: darkblue;
+      background-color: #5a5aff;
       }
 
+      .innerC{
+        -webkit-transform:  translateY(-100%) rotate(90deg) ;
+        transform:  translateY(-100%) rotate(90deg);
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        margin:10px;
+        /* background-color:#ffceff; */       
+    }
+
+    
 #inner {
   display: table;
   margin: 0 auto;
