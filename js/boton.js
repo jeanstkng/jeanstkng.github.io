@@ -12,6 +12,16 @@ $(function () {
 
     });
 
+      $("#enterButton").click(function () {
+
+        $("#enterButton").hide(400);
+
+        $(".hexagon").css("transform","rotate(150deg)");
+
+
+
+    }); 
+
     $("#Login").hover(
         function() {
           $( this ).toggleClass('text-white');
@@ -35,4 +45,6 @@ $(function () {
                 $("#Button4").hide(250);
             }
         });
+
+      
 });
