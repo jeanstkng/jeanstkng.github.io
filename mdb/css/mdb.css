@@ -1243,6 +1243,12 @@
   background: -o-linear-gradient(50deg, #2096ff, #05ffa3) !important;
   background: linear-gradient(40deg, #2096ff, #05ffa3) !important; }
 
+  .steel-gradient {
+    background: -webkit-linear-gradient(50deg, #272a2e, #a6918a) !important;
+    background: -o-linear-gradient(50deg, #272a2e, #a6918a) !important;
+    background: linear-gradient(40deg, #272a2e, #a6918a) !important; }
+  
+
 .blue-gradient {
   background: -webkit-linear-gradient(50deg, #45cafc, #303f9f) !important;
   background: -o-linear-gradient(50deg, #45cafc, #303f9f) !important;

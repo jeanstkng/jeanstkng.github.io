@@ -38,6 +38,10 @@ $(function () {
         setTimeout(function(){
           $('.hexagon').addClass('hiddenEnd');
               },1100);
+
+        setTimeout(function(){
+          $('.hexagon').addClass('done');
+              },1125);
        
         setTimeout(function(){
           //$('#loginForm').toggleClass('slideInLeft');

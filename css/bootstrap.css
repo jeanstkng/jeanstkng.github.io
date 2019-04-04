@@ -72,7 +72,10 @@ body {
   text-align: center;
 }
 
-
+.bg-wheel {
+  background: url("../img/wheelTme.png") no-repeat center center fixed;
+  background-size: cover;
+}
 
 /* Classes for the different ball buttons */
 .circle {
@@ -135,6 +138,12 @@ body {
   top: -267px;
 }
 
+.loginStyle {
+  border-radius: 8px; 
+  height: 300px;
+  background-image: linear-gradient(90deg, #7e818a, #211819);
+}
+
 /* Classes for the hexagon and its animations */
 
 .center {
@@ -150,9 +159,9 @@ body {
 .hexagon {
     width: 240px;
     height: 400px;
-    background-image: linear-gradient(90deg, rgb(68, 137, 206), rgb(68, 137, 206));
+    background-image: linear-gradient(90deg, #7e818a, #7e818a);
     border-radius: 15px;
-    transition: transform 300ms ease;
+    transition: transform 500ms ease, width 250ms ease;
   }
 
 .hexagon::before {
@@ -202,6 +211,11 @@ body {
     display: none;
   }
 
+  .hexagon.done {
+    width: 100px;
+    height: 450px;
+  }
+
   .hexagon::after {
     content: '';
     display: block;
@@ -218,10 +232,10 @@ body {
   }   
 
   /*
-  Use this if you want the hexagon to rotate when it's hovered
+  Use this if you want the hexagon to rotate when it's hovered */
   .hexagon:hover {
-    transform: rotate(150deg);
-  } */
+    transform: rotate(240deg);
+  } 
     
 /* helps to center elements */
   
