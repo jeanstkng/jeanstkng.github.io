@@ -63,10 +63,6 @@ body {
   background-color: #fff;
 }
 
-/* .header {
-  background-color: blue;
-} */
-
 .footer {
   position: fixed;
   left: 0;
@@ -77,6 +73,8 @@ body {
 }
 
 
+
+/* Classes for the different ball buttons */
 .circle {
   width: 100px;
   height: 100px;
@@ -89,22 +87,9 @@ body {
     height: 200px;
     border-radius: 50%;
     position: relative;
-    top: -350px;
+    top: -310px;
     z-index: 5;
 }
-
-
-.contentBlock {
-
-  width: 400px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  
-  }
-
 
 .circleSm {
   width: 10px;
@@ -113,6 +98,7 @@ body {
     
 }
 
+/* Classes for the sub buttons inside the ball */
 .cone {
   width: 0;
   height: 0;
@@ -149,20 +135,24 @@ body {
   top: -267px;
 }
 
+/* Classes for the hexagon and its animations */
+
 .center {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  height: 600px;
+  height: 400px;
+  
+  transition: left 500ms ease;
 }
 
 .hexagon {
-    width: 300px;
-    height: 500px;
+    width: 240px;
+    height: 400px;
     background-image: linear-gradient(90deg, rgb(68, 137, 206), rgb(68, 137, 206));
     border-radius: 15px;
-    transition: transform 400ms ease;
+    transition: transform 300ms ease;
   }
 
 .hexagon::before {
@@ -180,6 +170,38 @@ body {
     transform: rotate(60deg);
   }
 
+  @keyframes hideIt {
+    0%   {transform: rotate(45deg);}
+    25%  {transform: rotate(30deg);}
+    50%  {transform: rotate(15deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+  @keyframes hideIt2 {
+    0%   {transform: rotate(-45deg);}
+    25%  {transform: rotate(-30deg);}
+    50%  {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+  .hexagon.hidden::before {
+   
+    animation-name: hideIt;
+    animation-duration: 300ms;
+    
+  }
+  .hexagon.hiddenEnd::before {
+    display: none;
+  }
+  .hexagon.hidden::after {
+   
+    animation-name: hideIt2;
+    animation-duration: 300ms;
+  }
+  .hexagon.hiddenEnd::after {
+    display: none;
+  }
+
   .hexagon::after {
     content: '';
     display: block;
@@ -195,19 +217,20 @@ body {
     transform: rotate(-60deg);
   }   
 
-  /* .hexagon:hover {
+  /*
+  Use this if you want the hexagon to rotate when it's hovered
+  .hexagon:hover {
     transform: rotate(150deg);
   } */
     
+/* helps to center elements */
+  
 #inner {
   display: table;
   margin: 0 auto;
 }
 
-.margenAbajo {
-  display: table;
-  margin-bottom: -200px;
-}
+/* Class for the button that helps user to get to the top. */
 
 .scroll-to-top {
   position: fixed;
@@ -240,18 +263,6 @@ body {
     top: -25px;
   }
 }
-
-/* .escondido {
-  width: 100px;
-  height: 100px;
-}
-
-@media (min-width: 768px) {
-  .escondido {
-    width: 100px;
-    height: 100px;
-  }
-} */
 
 .header .navbar {
   background-color: transparent !important;
