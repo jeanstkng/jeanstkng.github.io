@@ -167,8 +167,9 @@ body {
     width: 240px;
     height: 400px;
     /* background-image: linear-gradient(90deg, #7e818a, #7e818a); */
-    background-image: radial-gradient(rgba(54, 54, 54, 0.712), rgba(54, 54, 54, 0.712)),
-    url('../img/redox_01/redox_01.png');
+    /* background-image: radial-gradient(rgba(54, 54, 54, 0.712), rgba(54, 54, 54, 0.712)),
+    url('../img/redox_01/redox_01.png'); */
+    background-image: url('../img/steelText.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -187,7 +188,10 @@ body {
     width: inherit;
     height: inherit;
     border-radius: inherit;
-    background-image: inherit;
+    background-image: url('../img/steelText.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Do not repeat the image */
     transform: rotate(60deg);
   }
 
@@ -239,7 +243,10 @@ body {
     width: inherit;
     height: inherit;
     border-radius: inherit;
-    background-image: inherit;
+    background-image: url('../img/steelText.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Do not repeat the image */
     transform: rotate(-60deg);
   }   
 
