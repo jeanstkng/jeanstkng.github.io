@@ -41,12 +41,12 @@ $(function () {
 
         setTimeout(function(){
           $('.hexagon').addClass('done');
-              },1125);
+              },1105);
        
         setTimeout(function(){
           //$('#loginForm').toggleClass('slideInLeft');
-          $("#loginForm").show('fadeInLeft');
-              },1200);
+          $("#loginForm").show('slideInLeft');
+              },1300);
         
 
     }); 
