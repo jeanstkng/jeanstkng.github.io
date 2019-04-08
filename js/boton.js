@@ -17,7 +17,7 @@ $(function () {
 
     $("#enterButton").click(function () {
 
-        $("#enterButton").hide(400);
+        $("#enterButton").fadeToggle(1000);
 
         $(".hexagon").css("transform","rotate(180deg)");
 
@@ -40,13 +40,13 @@ $(function () {
               },1100);
 
         setTimeout(function(){
-          $('.hexagon').addClass('done');
+          $('.hexagon').hide('fadeOut');
               },1105);
        
         setTimeout(function(){
           //$('#loginForm').toggleClass('slideInLeft');
           $("#loginForm").show('slideInLeft');
-              },1300);
+              },1200);
         
 
     }); 
