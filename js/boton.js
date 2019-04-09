@@ -28,9 +28,9 @@ $(function () {
               //RECORDAR COLOCAR ESTO EN CASO DE CELULARES
 
         //Animation for the hexagon to go left.
-        setTimeout(function(){
-          $('.center').css('left','25%');
-              },600);
+        // setTimeout(function(){
+        //   $('.center').css('left','25%');
+        //       },600);
         //Animation for the hexagon when login form will be displayed.
         setTimeout(function(){
           $('.hexagon').addClass('hidden');
@@ -40,7 +40,7 @@ $(function () {
               },1100);
 
         setTimeout(function(){
-          $('.hexagon').hide('fadeOut');
+          $('.hexagon').hide('50');
               },1105);
        
         setTimeout(function(){
