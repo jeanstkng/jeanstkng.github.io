@@ -63,6 +63,16 @@ body {
   background-color: #fff;
 }
 
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+  
+  overflow: hidden;
+}
+
 .footer {
   position: fixed;
   left: 0;
@@ -76,6 +86,8 @@ body {
   background: url("../img/cartaller.jpg") no-repeat center center fixed;
   background-size: cover;
 }
+
+
 
 /* Classes for the different ball buttons */
 .circle {
@@ -149,6 +161,91 @@ body {
   background-size: cover;
     background-position: center;
     background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+@media (max-width: 720px) {
+
+  #loginForm {
+    position: relative !important;
+    left: 0 !important; 
+    top: 125px !important; 
+    width: inherit !important; 
+  }
+
+  #outer {
+    position: inherit !important;
+  }
+}
+
+@media (min-width: 2000px) {
+  #loginForm {
+    left: 31% !important;
+    width: 35% !important;
+  }
+
+  input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+    width: 200px !important;
+    height: 60px;
+  }
+
+  .btn {
+    font-size: 1.30rem !important;
+  }
+
+  h3, .h3 {
+    font-size: 2.75rem !important;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 770px) {
+  #loginForm {
+    left: 15% !important;
+    width: 70% !important;
+  }
+
+  .loginStyle {
+    height: 350px;
+  }
+
+  h3, .h3 {
+    font-size: 2.75rem !important;
+  }
+
+  input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+    width: 200px !important;
+    height: 60px;
+  }
+
+  .btn {
+    font-size: 1.30rem !important;
+  }
+
+  .form-group {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 721px) {
+  #loginForm {
+    left: 18% !important;
+  }
+}
+
+
+
+
+@media (max-width: 720px) {
+  .circleLogin {
+    width: 150px;
+    height: 150px;
+    top: -220px;
+  }
+
+  .hexagon {
+    width: 180px !important;
+    height: 290px !important;
+
+  } 
 }
 
 /* Classes for the hexagon and its animations */
