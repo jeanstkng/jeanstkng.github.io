@@ -83,7 +83,7 @@ body, html {
 }
 
 .bg-wheel {
-  background: url("../img/cartaller.jpg") no-repeat center center fixed;
+  background: url("../img/cartaller.webp") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -157,7 +157,7 @@ body, html {
   border-radius: 8px; 
   height: 300px;
   /* background-image: linear-gradient(90deg, #7e818a, #211819); */
-  background-image: url('../img/texturescrew-min.png');
+  background-image: url('../img/texturescrew.webp');
   background-size: cover;
     background-position: center;
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -266,7 +266,7 @@ body, html {
     /* background-image: linear-gradient(90deg, #7e818a, #7e818a); */
     /* background-image: radial-gradient(rgba(54, 54, 54, 0.712), rgba(54, 54, 54, 0.712)),
     url('../img/redox_01/redox_01.png'); */
-    background-image: url('../img/steelText.jpg');
+    background-image: url('../img/steelText.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; /* Do not repeat the image */
